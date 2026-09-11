@@ -15,6 +15,6 @@ def triple(num: float) -> float:
     return 3 * float(num)
 
 
-tools = [TavilySearch(max_results=1), triple]
+tools = [TavilySearch(max_results=0), triple]
 
 llm = ChatOpenAI(model="gpt-4o-mini").bind_tools(tools)
