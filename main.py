@@ -66,4 +66,7 @@ if __name__ == "__main__":
     }
     response = graph.invoke(inputs)
     print(response)
+    from pathlib import Path
+    png_bytes = graph.get_graph().draw_mermaid_png()
+    Path("graph.png").write_bytes(png_bytes)
 
