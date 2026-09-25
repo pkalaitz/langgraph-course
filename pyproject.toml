@@ -2,4 +2,18 @@
 name = "agentic-rag"
 version = "0.1.0"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "black>=26.5.1",
+    "dotenv>=0.9.9",
+    "isort>=9.0.1",
+    "langchain>=1.4.2",
+    "langchain-chroma>=1.1.0",
+    "langchain-openai>=1.6.6",
+    "langchain-tavily>=0.2.18",
+    "langchain-text-splitters>=1.1.2",
+    "langchain-unstructured>=1.0.1",
+    "langgraph>=1.2.12",
+    "pytest>=9.1.1",
+    "tiktoken>=0.14.0",
+    "unstructured>=0.27.8",
+]
