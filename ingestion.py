@@ -13,7 +13,7 @@ urls = [
     "https://lilianweng.github.io/posts/2023-10-25-adv-attack-llm/",
 ]
 
-# Load the docs
+# Load the docs and split them in chunks and embed them and store them to chroma
 docs = [UnstructuredLoader(web_url=url, chunking_strategy="basic", max_characters=100000).load() for url in urls]
 docs_list = [item for sublist in docs for item in sublist]
 
