@@ -2,7 +2,7 @@ from langchain_core.prompts import ChatPromptTemplate # we want a structured ans
 from pydantic import BaseModel, Field # we want a pydantic object with info of yes/no relevant
 from langchain_openai import ChatOpenAI # for LLM chain
 
-llm = ChatOpenAI(model="gpt-6-astra", temperature=0)  # initialized with model gpt-3.5-turbo but id doesn't accept structured output but JSON mode
+llm = ChatOpenAI(model="gpt-6-astra")  # initialized with model gpt-3.5-turbo but id doesn't accept structured output but JSON mode
 # tested with model gpt-4o-mini but works with astra too
 # developers.openai.com/api/docs/guides/structured-outputs?api-mode=responses
 
